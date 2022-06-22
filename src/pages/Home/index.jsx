@@ -7,6 +7,12 @@ import IconToys from "react-native-vector-icons/MaterialIcons";
 
 import OffersBanner from "../../assets/home/offers.png";
 import Profile from "../../assets/home/profileImage.jpeg";
+import Bolsa from "../../assets/product/bolsa.jpg";
+import Microfone from "../../assets/product/microfone.jpg";
+import Roupa from "../../assets/product/Roupa.jpg";
+import Sapato from "../../assets/product/Sapato.jpg";
+import MenuBottom from "../../components/MenuBottom";
+import Product from "../../components/Product";
 import {
   Container,
   Header,
@@ -40,6 +46,7 @@ import {
   TextItemPopular,
   ItemPopularBlack,
   TextItemPopularBlack,
+  ProductArea,
 } from "./styles";
 
 function Home() {
@@ -232,6 +239,37 @@ function Home() {
           </TouchableHighlight>
         </LinksPopular>
       </Popular>
+
+      <ProductArea>
+        <Product
+          image={Bolsa}
+          title="Bolsa de couro"
+          note="4,5"
+          sales="8,567"
+          price="45,00"
+        />
+        <Product
+          image={Roupa}
+          title="Bolsa de couro"
+          note="4,5"
+          sales="8,567"
+          price="45,00"
+        />
+        <Product
+          image={Sapato}
+          title="Bolsa de couro"
+          note="4,5"
+          sales="8,567"
+          price="45,00"
+        />
+        <Product
+          image={Microfone}
+          title="Bolsa de couro"
+          note="4,5"
+          sales="8,567"
+          price="45,00"
+        />
+      </ProductArea>
     </Container>
   );
 }

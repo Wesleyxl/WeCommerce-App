@@ -1,8 +1,9 @@
 import styled from "styled-components/native";
 
-export const Container = styled.SafeAreaView``;
+export const Container = styled.ScrollView``;
 
 export const Header = styled.View`
+  margin-top: 50px;
   width: 100%;
   height: 60px;
   padding: 0 15px;
@@ -190,4 +191,11 @@ export const TextItemPopularBlack = styled.Text`
 export const TextItemPopular = styled.Text`
   color: #181a20;
   font-size: 20px;
+`;
+
+export const ProductArea = styled.View`
+  padding: 15px;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
 `;
