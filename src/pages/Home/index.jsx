@@ -11,7 +11,6 @@ import Bolsa from "../../assets/product/bolsa.jpg";
 import Microfone from "../../assets/product/microfone.jpg";
 import Roupa from "../../assets/product/Roupa.jpg";
 import Sapato from "../../assets/product/Sapato.jpg";
-import MenuBottom from "../../components/MenuBottom";
 import Product from "../../components/Product";
 import {
   Container,

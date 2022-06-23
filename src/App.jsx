@@ -1,20 +1,17 @@
+import { NavigationContainer } from "@react-navigation/native";
 import { StatusBar } from "expo-status-bar";
 import React from "react";
-import { StyleSheet, View } from "react-native";
 
-import Home from "./pages/Home";
+import UserContexts from "./contexts/userContexts";
+import MainStack from "./stacks/MainStack";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <StatusBar style="dark" />
-      <Home />
-    </View>
+    <UserContexts>
+      <NavigationContainer>
+        <StatusBar style="dark" />
+        <MainStack />
+      </NavigationContainer>
+    </UserContexts>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-});
