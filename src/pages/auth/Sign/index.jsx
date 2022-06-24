@@ -1,6 +1,6 @@
 import { useNavigation } from "@react-navigation/native";
 import React from "react";
-import { TouchableHighlight, TouchableOpacity } from "react-native";
+import { TouchableOpacity } from "react-native";
 
 import SignLogo from "../../../assets/sign/access_account_dark.svg";
 import AppleLogo from "../../../assets/sign/appleLogo.svg";
@@ -30,32 +30,17 @@ function Sign() {
       <Title>Vamos Entrar</Title>
 
       <AuthButtons>
-        <TouchableHighlight
-          style={{ borderRadius: 15 }}
-          onPress={() => {}}
-          activeOpacity={1}
-          underlayColor="#f1f1f1"
-        >
+        <TouchableOpacity>
           <AuthButtonLarge text="Continue com Facebook" Logo={FacebookLogo} />
-        </TouchableHighlight>
+        </TouchableOpacity>
 
-        <TouchableHighlight
-          style={{ borderRadius: 15 }}
-          onPress={() => {}}
-          activeOpacity={1}
-          underlayColor="#f1f1f1"
-        >
+        <TouchableOpacity>
           <AuthButtonLarge text="Continue com Google" Logo={GoogleLogo} />
-        </TouchableHighlight>
+        </TouchableOpacity>
 
-        <TouchableHighlight
-          style={{ borderRadius: 15 }}
-          onPress={() => {}}
-          activeOpacity={1}
-          underlayColor="#f1f1f1"
-        >
+        <TouchableOpacity>
           <AuthButtonLarge text="Continue com Apple" Logo={AppleLogo} />
-        </TouchableHighlight>
+        </TouchableOpacity>
       </AuthButtons>
 
       <Divisor>

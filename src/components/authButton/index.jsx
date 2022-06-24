@@ -1,12 +1,20 @@
 import React from "react";
 
-import { Container, Text } from "./styles";
+import { ContainerLarge, Text, ContainerSmall } from "./styles";
 
 export function AuthButtonLarge({ text, Logo }) {
   return (
-    <Container>
+    <ContainerLarge>
       <Logo />
       <Text>{text}</Text>
-    </Container>
+    </ContainerLarge>
+  );
+}
+
+export function AuthButtonSmall({ Logo }) {
+  return (
+    <ContainerSmall>
+      <Logo />
+    </ContainerSmall>
   );
 }
